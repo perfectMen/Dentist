@@ -1,0 +1,18 @@
+include _mixins/main
+
+<!DOCTYPE html>
+html(
+	lang="en"
+	ng-app='dentist'
+)
+	head
+		if base
+			base(href=base)
+			+head()
+
+	body
+		.general(class='container')
+			block html
+				<ng-view></ng-view>
+		
+		+scripts(scripts)
