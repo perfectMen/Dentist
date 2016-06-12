@@ -1,8 +1,56 @@
 mixin contact(contact)
 	div(class="row")
-		//-label=contact.name
 		form(class="form-horizontal")
 			div(class="form-group")
 				label(class="control-label col-xs-2")=contact.name
+				div(class="col-xs-10")
+					input(
+						type="text"
+						placeholder="Nombre Completo"
+					)
+			div(class="form-group")
+				label(class="control-label col-xs-2")=contact.telefono
+				div(class="col-xs-10")
+					input(
+						type="tel"
+						placeholder="Numero Telefonico"
+					)
+			div(class="form-group")
+				label(class="control-label col-xs-2")=contact.email
+				div(class="col-xs-10")
+					input(
+						type="email"
+						placeholder="Correo Electronico"
+					)
+			div(class="form-group")
+				label(class="control-label col-xs-2")=contact.servicio
+				div(class="col-xs-10")
+					select(
+						class="form-control"
+						id="sel1"
+					)
+						option=contact.servicio1
+						option=contact.servicio2
+			div(class="form-group")
+				label(class="control-label col-xs-2")=contact.ciudad
+				div(class="col-xs-10")
+					select(
+						class="form-control"
+						id="sel1"
+					)
+						option=contact.ciudad1
+						option=contact.ciudad2
+			div(form-group)
+				label(class="control-label col-xs-2")=contact.dudas
+				div(class="col-xs-10")
+					textarea(
+						placeholder="Escribe un breve resumen de lo que nos quieres preguntar"
+					)
+			div(form-group)
+				div(class="col-xs-offset-2 col-xs-10")
+					button(
+						type="submit"
+						class="btn btn-primary"
+					)=contact.save
 
 		
