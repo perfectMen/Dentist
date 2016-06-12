@@ -14,6 +14,9 @@ function config($routeProvider, $locationProvider) {
     .when('/login', {
         templateUrl: '../views/login/index.html'
     })
+    .when('/contact', {
+        templateUrl: '../views/contact/index.html'
+    })
     .otherwise({
     	redirectTo:'/'
     })

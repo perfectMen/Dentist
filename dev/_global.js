@@ -14,5 +14,6 @@ const getComponent = (name, dir, nameFile) => {
 
 module.exports = {
 	scripts: getComponent('commons/scripts/'),
-	promotion: getComponent('home/promocion/')
+	promotion: getComponent('home/promocion/'),
+	contact: getComponent('contact')
 }
