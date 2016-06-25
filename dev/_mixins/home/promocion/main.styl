@@ -1,16 +1,54 @@
-.general
+.container-fluid
 	.promotion
-		padding 30px 0
+		left 5%
+		position absolute
+		top 36%
+		width 50%
+		box-shadow 1px 0px 1px 1px white
+		border-radius 10px
+		padding 10px
+		
+		.col-1 
+			p 
+				font-size 18px
+				border-bottom 1px solid #8080804d
+				padding-bottom 10px
+				
+			h1 
+				font-size 26px
+			
+			h2 
+				font-size 20px
+				
+			div 
+				border-radius 10px
 
-		.p-centrar
-			text-align center
+		.col-2
+			padding 1%
+			
+			img 
+				height 260px
+				
+		.ver
+			border-top 1px solid #8080804d
+			padding-top 10px
+			padding-bottom 10px
+			
+			div
+				&:first-of-type
+					i.whatsapp
+						background url(../../img/icons/whatsapp.png)
+						
+					span 
+						font-size 18px	
 
-		img
-			margin-bottom 30px
+			button
+				border-radius 6px
+				float right
+				
+				&:hover
+					background #ffeb3b
+					border: 1px solid white
 
-		.title
-			color #009688
-			font-weight bold
-
-		.description
-			margin-bottom 30px
+				&:active
+					border: 1px solid white!important
