@@ -16,5 +16,6 @@ module.exports = {
 	scripts: getComponent('commons/scripts/'),
 	promotion: getComponent('home/promocion/'),
 	contact: getComponent('contact'),
-    footer: getComponent('commons/footer/')
+    footer: getComponent('commons/footer/'),
+    redes: getComponent('redes')
 }

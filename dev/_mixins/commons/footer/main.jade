@@ -1,27 +1,28 @@
+include ../../redes/main
 include collection/main 
 
 mixin footer(footer)
 	.footer(class='row')
-		.col-one(class='col-xs-12')
+		.cols-footer(class='col-xs-12')
 
-			div(class='col-xs-3')
-				+collection-footer(footer.col_one)
+			.col-one(class='col-xs-4')
+				div(class="col-xs-4")
+					img(src="img/doctor.jpg" class="img-circle img-responsive")
 
-			div(class='col-xs-3')
+				div(class="col-xs-8")
+					span  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente minima aliquam dolor nihil facere quis, quasi ab et iure, dolorum iusto, pariatur assumenda dignissimos, maiores.
+
+			.col-two(class='col-xs-4')
 				+collection-footer(footer.col_two)
 
-			div(class='col-xs-3')
-				+collection-footer(footer.col_three)
+			.redes.padding-10(class='col-xs-4')
+				+redes(redes)
 
-			.redes(class='col-xs-3')
-				div(class='col-xs-12')
-					p Senior Code una empresa de:
-
-				div(class='col-xs-12')
-					//-img(src='/img/descarga.jpg')
-					p Aqui va otro mixin de redes-sociales
-
-	div(class="row")
+	.copyright(class="row")
 		div(class="col-xs-12")
-			span @2016:Derechos reservados.
-			span Senior Code
+			div(class="col-xs-6")
+				span Copyright @ 2016 Senior Code - Todos los derechos reservados- 
+			div(class="col-xs-3")
+				a(href="") Aviso de privacidad -
+			div(class="col-xs-3")
+				a(href="") Politicas de servicio
