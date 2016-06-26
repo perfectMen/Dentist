@@ -1,57 +1,27 @@
-mixin footer()
+include collection/main 
+
+mixin footer(footer)
 	.footer(class='row')
-		.col-one(class='col-xs-10 col-xs-offset-1')
+		.col-one(class='col-xs-12')
 
-			div(class='col-xs-2')
-				p
-					a(href='') Cursos
+			div(class='col-xs-3')
+				+collection-footer(footer.col_one)
 
-				p
-					a(href='') Inscribete
+			div(class='col-xs-3')
+				+collection-footer(footer.col_two)
 
-				p
-					a(href='') Multiusuarios
+			div(class='col-xs-3')
+				+collection-footer(footer.col_three)
 
-				p
-					a(href='') Formadores
-
-
-			div(class='col-xs-2')
-
-				p
-					a(href='') FAQ
-
-				p
-					a(href='') Contacto
-
-				p
-					a(href='') Soporte
-
-				p
-					a(href='') Apps
-
-
-			div(class='col-xs-2')
-				p
-					a(href='') Responsable
-
-				p
-					a(href='') CGV
-
-				p
-					a(href='') Politica de Privacidad
-
-				p
-					a(href='') Internacional
-
-
-
-			.redes(class='col-xs-6')
+			.redes(class='col-xs-3')
 				div(class='col-xs-12')
 					p Senior Code una empresa de:
 
 				div(class='col-xs-12')
-					img(src='/img/descarga.jpg')
+					//-img(src='/img/descarga.jpg')
 					p Aqui va otro mixin de redes-sociales
 
-				
+	div(class="row")
+		div(class="col-xs-12")
+			span @2016:Derechos reservados.
+			span Senior Code
