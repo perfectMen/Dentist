@@ -1,42 +1,29 @@
-mixin icon-links()
-	ul(
-		id="dropdown1" 
-		class="dropdown-content"
-	)
-		li
-			a(href="#!") one
+mixin nav-bar-2() 
+	.nav-bar-2.margin15(class="row")
+		nav.position-fixed.blue-1(class="nav-wrapper")
+			div(class="col-md-3")
+				.logo(class="col-md-12")
+					a(href="#!" class="brand-logo")
+						div(class="text-xs-center")
+							img(src="img/logo.png" class="img-responsive")
+				
+				
+			div(class="col-md-9")
+				div(class="row")
+					.info-box(class="col-md-12")
+						+info()
 
-		li
-			a(href="#!") two
-
-		li
-			a(href="#!") Salir
-
-	nav.icon-links
-
-		div(class="nav-wrapper")
-			a(href="#!" class="brand-logo")
-				img(src="img/logo.png")
-				ul(class="right hide-on-med-and-down")
-					li
-						a(href="#")
-							img(src="img/icons/magnify/ic_magnify_black_18dp.png")
-
-					li(
-						class="menu"
-					)
-						a(href="#")
-							img(src="img/icons/view-grid/ic_view_grid_black_18dp.png")
-
-					li(
-						class="dropdown-button" 
-						href="#!" 
-						data-activates="dropdown1"
-					)
-						a(href="#")
-							img(src="img/icons/dots-vertical/ic_dots_vertical_black_18dp.png")
-
-
+					.links(class="col-md-12")
+						ul(class="right hide-on-med-and-down")
+							li
+								a(href="") Home
+									i(class="material-icons left") business
+							li
+								a(href="") Servicios
+									i(class="material-icons left") assignment	
+							li
+								a(href="") Contacto
+									i(class="material-icons left") contacts
 
 
 
